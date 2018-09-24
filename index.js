@@ -23,3 +23,13 @@ Code that starts @ Chapter 7 EJS
 // warrior.attack("impaling weapon thing")
 
 // PROTOTYPES
+// let protoCapitalist = {
+//     speak(value) {
+//         console.log(`This ${this.type} will make me ${value} of cash!`)
+//     }
+// };
+
+// let redBlood = Object.create(protoCapitalist);
+// redBlood.type = "poverty";
+// redBlood.speak("heaps");
+
