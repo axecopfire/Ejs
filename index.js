@@ -32,5 +32,16 @@ Code that starts @ Chapter 7 EJS
 // let redBlood = Object.create(protoCapitalist);
 // redBlood.type = "poverty";
 // redBlood.speak("heaps");
+
+
+let protoSocial = {
+    speach(value) {
+        console.log(`This ${this.type} will make ${value} for everyone!`);
+    }
+};
+
+let blueBlood = Object.create(protoSocial);
+blueBlood.type = "farmers";
+blueBlood.speach("heaps");
  
  
