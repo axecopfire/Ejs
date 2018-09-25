@@ -33,3 +33,4 @@ Code that starts @ Chapter 7 EJS
 // redBlood.type = "poverty";
 // redBlood.speak("heaps");
 
+ 
