@@ -33,15 +33,20 @@ Code that starts @ Chapter 7 EJS
 // redBlood.type = "poverty";
 // redBlood.speak("heaps");
 
+//---------------------
 
-let protoSocial = {
-    speach(value) {
-        console.log(`This ${this.type} will make ${value} for everyone!`);
-    }
-};
+// let protoSocial = {
+//     speach(value) {
+//         console.log(`This ${this.type} will make ${value} for everyone!`);
+//     }
+//     // hair: "green"
+// };
 
-let blueBlood = Object.create(protoSocial);
-blueBlood.type = "farmers";
-blueBlood.speach("heaps");
- 
+// let blueBlood = Object.create(protoSocial);
+// blueBlood.type = "farmers";
+// blueBlood.speach("heaps");
+
+// // I like that the prototype is protosocial and identifies the function
+// console.log(Object.getPrototypeOf(blueBlood));
+
  
