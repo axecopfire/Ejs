@@ -32,5 +32,5 @@ Code that starts @ Chapter 7 EJS
 // let redBlood = Object.create(protoCapitalist);
 // redBlood.type = "poverty";
 // redBlood.speak("heaps");
-
+ 
  
