@@ -66,7 +66,7 @@ Code that starts @ Chapter 7 EJS
  
 // ----------------------------
 
-// Utilizing Class and Constructor notation
+// // Utilizing Class and Constructor notation
 // class Joker {
 //     constructor(type) {
 //         this.type = type;
@@ -78,3 +78,27 @@ Code that starts @ Chapter 7 EJS
 
 // let bully = new Joker("Killer");
 // bully.disruptClass("Where do babies come from? Santa Claus");
+// bully.disruptClass();
+// // console.log(Object.getPrototypeOf(Joker))
+
+// ------------------
+
+// Mapping
+
+/* This is dangerous because this object already has several prototypes
+let inventory = {
+    bow: 10,
+    sword: 20,
+    axe: 10
+};
+*/
+
+// Instead use Map() or Object.create(null) to make an object map
+let inventory = new Map();
+inventory.set("bow", 10)
+inventory.set("sword", 20)
+inventory.set("axe", 10)
+
+console.log(`Axe in inventory is ${inventory["axe"]} ap`);
+console.log(`Do I have a bow in my inventory?`, "bow" in inventory);
+console.log('Does the inventory object have the prop tostring?', inventory.has("toString"));
