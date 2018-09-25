@@ -49,4 +49,32 @@ Code that starts @ Chapter 7 EJS
 // // I like that the prototype is protosocial and identifies the function
 // console.log(Object.getPrototypeOf(blueBlood));
 
+//----------------------------
+// Old way of using constructors
+
+// function tvchannel(genre) {
+// // binds this to object
+//     this.genre = genre;
+// }
+// tvchannel.prototype.watch = function(station) {
+//     console.log(`${this.genre} is on ${station}`);
+// }
+
+// // New keyword instantiates 
+// let foxNews = new tvchannel("Conservative news");
+// foxNews.watch("Fox");
  
+// ----------------------------
+
+// Utilizing Class and Constructor notation
+// class Joker {
+//     constructor(type) {
+//         this.type = type;
+//     }
+//     disruptClass(joke) {
+//         console.log(`The ${this.type} told the class '${joke}!'`);
+//     }
+// };
+
+// let bully = new Joker("Killer");
+// bully.disruptClass("Where do babies come from? Santa Claus");
