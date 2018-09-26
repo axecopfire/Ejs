@@ -47,5 +47,5 @@ class VillageState {
             }).filter(p => p.place != p.address);
             return new VillageState(destination, parcels);
         }
-    } 
+    }  
 }
