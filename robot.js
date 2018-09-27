@@ -68,3 +68,16 @@ console.log(next.place);
 console.log(next.parcels);
 console.log(first.place); */
 
+function runRobot(state, robot, memory) {
+    // This is super cool imo. I've usually seen the fail state in the for loop declaration. Seems pretty confident to put in the break state of an if statement. Can't wait til I get that kind of confidence
+    for (let turn = 0; ; turn++) {
+        if(state.parcels.length == 0) {
+            console.log(`Done in ${turn} turns`);
+            break;
+        }
+        let action = robot(state, memory);
+        state = state.move(action.direction);
+        memory = action.memory;
+        console.log(`Moved to ${action.direction}`);
+    }
+}
