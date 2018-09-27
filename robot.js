@@ -1,5 +1,4 @@
 // The Town of Meadowfield
-
 const roads = [
     "Alice's House-Bob's House", "Alice's House-Cabin",
     "Alice's House-Post Office", "Bob's House-Town Hall",
@@ -41,10 +40,18 @@ class VillageState {
         if (!roadGraph[this.place].includes(destination)) {
             return this;
         } else {
-            let parcels = this.parcels.map(p => {
-                if (p.place != this.place) return p;
-                return {place: destination, address: p.address};
-            }).filter(p => p.place != p.address);
+            // I feel like this section possibly is too condensed
+            let parcels = this.parcels
+                .map(p => {
+                    // This seems intense to look through and map all the places to destinations and addresses. Still looking
+                    if (p.place != this.place) return p;
+                    return {
+                        place: destination, 
+                        address: p.address
+                    };
+                })
+                // This would be filtering for every place that does not equal the address
+                .filter(p => p.place != p.address);
             return new VillageState(destination, parcels);
         }
     } 
